@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Bus_About_Our_Controller">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG79.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sl1-2C-IeM">
+                    <rect key="frame" x="117.5" y="152" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="7qQ-br-xBv"/>
+                        <constraint firstAttribute="height" constant="140" id="aHP-6c-xbb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="非常感谢您能选择现金巴士" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nck-KA-XFw">
+                    <rect key="frame" x="93" y="309" width="189" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="FFV-wT-Bti"/>
+                        <constraint firstAttribute="width" constant="189" id="yBr-RJ-iNI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://xjbs.shtj.info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kq9-Ww-8Oz">
+                    <rect key="frame" x="16" y="617" width="343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="zgr-S1-1bI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.4764435279" green="0.4764435279" blue="0.4764435279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品介绍：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEq-Xx-qt3">
+                    <rect key="frame" x="15" y="345" width="74" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="l4V-Dz-C0a"/>
+                        <constraint firstAttribute="height" constant="16" id="nw0-ge-1W4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJf-KE-ECg">
+                    <rect key="frame" x="15" y="369" width="345" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="qwE-LJ-Hya"/>
+                    </constraints>
+                    <string key="text">       现金巴士作为一款导航引导产品，在使用过程中简单易懂方便操作，路线规划与线路导航的结合，保证用户在使用期间能够精准、快速的到达目的地！
+       为响应使用新能源，在更多的新能源汽车加入社会时，总会遇到在途中能源耗尽的情况我们在您附近找到离您距离最近的充电站方便您新能源汽车的使用！</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="京ICP备14184239号-3 公交网 ©️2018 - 2029" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0p-1j-H1o">
+                    <rect key="frame" x="16" y="639" width="343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="N5Z-KE-Lad"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.47644352791878175" green="0.47644352791878175" blue="0.47644352791878175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nck-KA-XFw" firstAttribute="top" secondItem="Sl1-2C-IeM" secondAttribute="bottom" constant="17" id="6iD-aZ-lb8"/>
+                <constraint firstItem="Sl1-2C-IeM" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="132" id="9te-mG-qW5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Z0p-1j-H1o" secondAttribute="trailing" constant="16" id="BdE-l8-Vi8"/>
+                <constraint firstItem="nck-KA-XFw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CqC-Tt-004"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Kq9-Ww-8Oz" secondAttribute="trailing" constant="16" id="Dq7-5t-6Mq"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Z0p-1j-H1o" secondAttribute="bottom" constant="7" id="KzM-vj-QRN"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="BJf-KE-ECg" secondAttribute="trailing" constant="15" id="N0m-dr-BVG"/>
+                <constraint firstItem="Z0p-1j-H1o" firstAttribute="top" secondItem="Kq9-Ww-8Oz" secondAttribute="bottom" constant="1" id="cHC-D6-R3s"/>
+                <constraint firstItem="BJf-KE-ECg" firstAttribute="top" secondItem="LEq-Xx-qt3" secondAttribute="bottom" constant="8" id="cPE-HJ-s3h"/>
+                <constraint firstItem="Sl1-2C-IeM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fq2-Uz-ZBZ"/>
+                <constraint firstItem="LEq-Xx-qt3" firstAttribute="top" secondItem="nck-KA-XFw" secondAttribute="bottom" constant="15" id="jkd-gk-op8"/>
+                <constraint firstItem="LEq-Xx-qt3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="k5D-je-y24"/>
+                <constraint firstItem="Kq9-Ww-8Oz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="mUJ-uu-0rq"/>
+                <constraint firstItem="Z0p-1j-H1o" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="o8v-5M-Rb6"/>
+                <constraint firstItem="BJf-KE-ECg" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="zGU-Gp-jz9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="120.98950524737631"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WechatIMG79.png" width="200" height="200"/>
+    </resources>
+</document>

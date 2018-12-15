@@ -1,0 +1,97 @@
+//
+//  MyBusPCH.pch
+//  NewBus
+//
+//  Created by 嘎嘎嘎 on 2018/12/15.
+//  Copyright © 2018 嘎嘎嘎. All rights reserved.
+//
+
+#ifndef MyBusPCH_pch
+#define MyBusPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "MyBus_BaseViewController.h"
+#import "Reachability.h"
+#import "MBProgressHUD.h"
+#import "Masonry.h"
+#import "FMDB.h"
+#import "SDWebImage.h"
+#import "ZYBannerView.h"
+#import "MJRefresh.h"
+#import "UIView+ShowHua.h"
+#import "UITextView+Placeholder.h"
+
+#pragma mark --------------------------- 查询记录 ---------------------------
+#import "Bus_New_Record.h"
+#import "Bus_Line_New_Model.h"
+
+
+#pragma mark --------------------------- 屏幕尺寸相关宏定义 ---------------------------
+#define     SCR_W                  [UIScreen mainScreen].bounds.size.width          /** 屏幕宽度 */
+#define     SCR_H                  [UIScreen mainScreen].bounds.size.height         /** 屏幕高度 */
+#define     SCR_RATIO_W            SCR_W/375.                                       /** 屏幕的宽比<基准375>*/
+#define     SCR_RATIO_H            SCR_H/667.                                       /** 屏幕的高比<基准667>*/
+#define     FitX(w)                (SCR_RATIO_W*(w))                                /** 根据4.7寸屏适配的宽度*/
+#define     FitY(h)                (SCR_RATIO_H*(h))                                /** 根据4.7寸屏适配的宽度*/
+#define     SCREEN_3_5             (SCR_W == 320 && SCR_H == 480)                   /** 屏幕为3.5寸的宏*/
+#define     SCREEN_4               (SCR_W == 320 && SCR_H == 568)                   /** 屏幕为4寸的宏*/
+#define     SCREEN_4_7             (SCR_W == 375 && SCR_H == 667)                   /** 判断是不是4.7寸屏幕的宏*/
+#define     SCREEN_5_5             (SCR_W == 414 && SCR_H == 732)                   /** 判断是不是5.5寸屏幕的宏*/
+#define     SCREEN_X               (SCR_W == 375 && SCR_H == 812)                   /** 判断是不是X或Xr的宏*/
+#define     SCREEN_X_MAX           (SCR_W == 414 && SCR_H == 896)                   /** 判断是不是Xs或X_MAX的宏*/
+
+//iPhoneX系列
+#define STATUS_BAR_HEIGHT ((SCREEN_X == YES || SCREEN_X_MAX ==YES) ? 44.0 : 20.0)
+#define     NAV_BAR_HEIGHT         44.0                                             /** 导航栏高度的宏*/
+#define     SELF_NAV_BAR_HEGHT     FitX(40.0)                                       /** 自定义导航栏高度*/
+#define     SEARCH_BAR_HEIGHT      44.0                                             /** 搜索栏高度的宏*/
+#define     TAB_BAR_HEIGHT         49.0                                             /** 标签栏高度的宏*/
+#define     BottomSafeArea         (SCREEN_X ? 34.0 : 0.0)                          /** 底部安全距离*/
+
+#define     RGB(R,G,B)  \
+[UIColor colorWithRed:(R)/255.0f green:(G)/255.0f blue:(B)/255.0f alpha:1]          /** RGB颜色*/
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define COLOR_WITH_HEX(hexValue) \
+[UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16)) / 255.0 \
+green:((float)((hexValue & 0xFF00) >> 8)) / 255.0 \
+blue:((float)(hexValue & 0xFF)) / 255.0 alpha:1.0f]
+
+//用于持久化当前app版本号的key
+#define SAVE_VERSION @"savedVersion"
+#define AppVer [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]          // app版本
+#define AppSysVer [[UIDevice currentDevice] systemVersion]                          // 手机系统版本
+
+#define LoginSaveToken(token)   [[NSUserDefaults standardUserDefaults] setObject:token forKey:@"phone"];\
+[[NSUserDefaults standardUserDefaults] synchronize];
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#define debugMethod()
+#endif
+
+//#define NSLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+
+//安全连接
+#define HOME_URL_MAIN @"http://bdsux.bangzhuhua.cn/zhaoli/xianjinbashi"
+#define HOME_URL_URL @"xianjinbashi"
+#define HOME_URL_Color @"zhaoli"
+
+#pragma mark -app
+#define MyApp @"1444573630"
+#define MyUM @"5bfb94cdb465f5f70d000294"//正式
+//#define MyUM @"5bfb9851f1f55676c9000043"//测试
+#define MyJPush @"34b860669cafa5dd6d565231"//正式
+//#define MyJPush @"f10a72fe051afe8175d5a991"//测试
+
+#endif /* MyBusPCH_pch */
